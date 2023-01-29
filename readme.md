@@ -1,0 +1,3 @@
+Olá, seja bem vindo! Este é o meu web currículo, feito com Html/Css, um projeto responsivo com intuíto de me apresentar para você!
+
+Neste Web cv, você irá descobrir um pouco sobre mim, como eu descobri a área da programação, meus pontos fortes, tecnologias que estou aprendendo e o nível de conhecimento que tenho sobre elas, acesso ao meu portfólio, alguns certificados e o meu contato para que possamos trabalhar juntos! ;)
