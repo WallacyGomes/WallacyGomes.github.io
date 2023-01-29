@@ -1,0 +1,163 @@
+.introducao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.fotoperfil {
+  border-radius: 7px;
+  margin-left: 2rem;
+}
+
+.home, h1 {
+  font-size: 5rem;
+  position: relative;
+  color: #d3d3d3;
+}
+
+.nome {
+  color: #e7e3e3;
+  line-height: 1.5;
+}
+
+.home > h1::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 79px;
+  background-image: url(../Imagens/detalhe-home.svg);
+  position: absolute;
+  left: -2.5rem;
+  bottom: 13.5rem;
+}
+
+.home > h1::before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 79px;
+  background-image: url(../Imagens/detalhe-home-invert.svg);
+  position: absolute;
+  right: 20rem;
+  bottom: 0rem;
+}
+
+@media (max-width: 1230px) {
+  home,
+  h1 {
+    font-size: 4rem;
+  }
+  .home > h1::after {
+    background-image: url(../Imagens/detalhe.svg);
+    width: 50px;
+    height: 60px;
+    left: -1.5rem;
+    bottom: 11.5rem;
+    z-index: -1;
+  }
+
+  .home > h1::before {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  home,
+  h1 {
+    font-size: 2.8rem;
+  }
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  .home > h1::after {
+    display: none;
+  }
+
+  .home > h1::before {
+  content: "!";
+  font-size: 56px;
+  display: block;
+  color: #654DF4;
+  background-image: url(none);
+  left: 13.4rem;
+  bottom: -1.3rem;
+  }
+  .fotoperfil{
+    width: 280px;
+    height: 373px;
+    height: auto;
+  }
+}
+
+@media (max-width: 740px) {
+  home,
+  h1 {
+    font-size: 2.2rem;
+  }
+  h1::after {
+    display: none;
+  }
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .home > h1::before {
+  content: "!";
+  font-size: 46px;
+  left: 10.5rem;
+  bottom: -1.9rem;
+  }
+  .fotoperfil{
+    width: 200px;
+    height: 266px;
+    height: auto;
+  }
+}
+
+@media (max-width: 590px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 100px 0px 150px 0px;
+  }
+  .fotoperfil {
+    display: none;
+  }
+  .home,
+  h1 {
+    font-size: 3.5rem;
+  }
+  .nome {
+    line-height: 1.5;
+  }
+  .home > h1::after {
+    width: 17px;
+    height: 50px;
+    left: -1.7rem;
+    bottom: 9.6rem;
+  }
+
+  .home > h1::before {
+  content: "!";
+  font-size: 60px;
+  left: 16.5rem;
+  bottom: -0.8rem;
+  }
+}
+
+@media (max-width: 440px){
+  .home,
+  h1 {
+    font-size: 2rem;
+  }
+  .home > h1::before {
+  font-size: 40px;
+  left: 9.5rem;
+  bottom: -2.3rem;
+  }
+}

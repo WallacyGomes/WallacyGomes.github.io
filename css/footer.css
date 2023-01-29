@@ -1,0 +1,116 @@
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #060606;
+  padding: 120px 30px 40px 30px;
+  align-items: center;
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+}
+
+.contatos {
+  font-size: 24px;
+}
+
+.email,
+.celular,
+.linkedin {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 30px;
+}
+
+.celular {
+  position: relative;
+}
+
+.celular::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 14%;
+  left: 85%;
+  width: 180px;
+  height: 0px;
+  border: 2px solid #252525;
+  transform: rotate(90deg);
+}
+
+container-mensagem {
+  display: flex;
+  align-items: flex-end;
+}
+
+.mensagem {
+  font-size: 30px;
+  text-align: right;
+}
+
+@media (max-width: 960px) {
+  .mensagem {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 880px) {
+  .mensagem {
+    font-size: 24px;
+  }
+  .contatos {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .mensagem {
+    font-size: 20px;
+  }
+  .contatos {
+    font-size: 18px;
+  }
+  .email,
+  .celular,
+  .linkedin {
+    gap: 12px;
+    padding-bottom: 14px;
+  }
+  footer img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 690px) {
+  .mensagem {
+    font-size: 18px;
+  }
+  .contatos {
+    font-size: 14px;
+  }
+  footer img {
+    width: 18px;
+    height: 18px;
+  }
+  .celular::before {
+    display: none;
+  }
+}
+
+@media (max-width: 690px) {
+  footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .mensagem {
+    font-size: 14px;
+  }
+  .contatos {
+    font-size: 14px;
+  }
+}

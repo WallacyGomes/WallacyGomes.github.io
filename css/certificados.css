@@ -1,0 +1,118 @@
+.sobre-certficados {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  border-radius: 4px;
+  padding: 30px 30px;
+}
+
+.sobre-certficados h1 {
+  font-size: 100px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to top, #9f9b9b, #735dfd);
+}
+
+.certificado-s {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 40px 40px;
+  border-radius: 4px;
+  background-color: #0f0f0f;
+}
+
+.certificado-s h2 {
+  font-size: 48px;
+  color: #c2c2c2;
+}
+
+.lista-certificados{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.lista-certificados h3{
+  font-weight: normal;
+}
+
+.lista-certificados li {
+  font-size: 22px;
+  line-height: 1.4;
+  padding: 20px 10px;
+
+}
+
+.lista-certificados li:nth-child(odd){
+  background-color: #080808;
+  border-radius: 4px;
+}
+
+.lista-certificados li:nth-child(even){
+  background-color: #0a0a0a;
+  border-radius: 4px;
+}
+
+.unindo{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 20px;
+}
+
+.unindo a{
+  text-decoration: none;
+  color: #735DFD;
+  font-size: 16px;
+}
+
+.unindo a:hover{
+  text-decoration: underline 2px #654df4;
+}
+
+@media (max-width: 800px){
+  .sobre-certficados h1{
+    font-size: 70px;
+  }
+  .certificado-s h2{
+    font-size: 36px;
+  }
+  .lista-certificados li{
+    font-size: 18px;
+  }
+  .unindo a{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 600px){
+  .sobre-certficados {
+    grid-template-columns: 1fr;
+  }
+  .sobre-certficados h1{
+    display: none;
+  }
+  .certificado-s h2{
+    font-size: 36px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to top, #9f9b9b, #735dfd);
+    position: relative;
+  }
+  .lista-certificados li{
+    font-size: 18px;
+  }
+  .unindo a{
+    font-size: 10px;
+  }
+}
