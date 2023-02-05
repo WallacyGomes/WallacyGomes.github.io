@@ -48,7 +48,7 @@ a:hover {
     display: none;
   }
   .header{
-    background-color: #0A0A0A;
+    background-color: var(var(--cor-fundo-header));
     gap: 0rem;
   }
 }

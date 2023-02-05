@@ -29,7 +29,7 @@ body {
 @media (prefers-color-scheme: light) {
   :root {
     --cor-fundo-body: #f0f0f0;
-    --cor-fundo-header: #fafafa;
+    --cor-fundo-header: #f5f5f55e;
     --cor-fundo-cursos: #654df4;
     --cor-fundo-cursos-li1: #3e27c8;
     --cor-fundo-cursos-li2: #3520b3;
