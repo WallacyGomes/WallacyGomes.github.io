@@ -16,11 +16,11 @@
 .home, h1 {
   font-size: 5rem;
   position: relative;
-  color: #d3d3d3;
+  color: var(--cor-texto-h1);
 }
 
 .nome {
-  color: #e7e3e3;
+  color: var(--cor-texto-span);
   line-height: 1.5;
 }
 

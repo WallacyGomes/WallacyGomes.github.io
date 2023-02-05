@@ -14,12 +14,12 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to bottom, #9f9b9b, #735dfd);
+  background-image: linear-gradient(to bottom, var(--cor-texto-h1-gradient), #735dfd);
 }
 
 .sobremim p {
   font-family: "Roboto Slab", serif;
-  color: #dfdfdf;
+  color: var(--cor-texto-p2);
   width: 760px;
   height: 624px;
   font-weight: 400;
@@ -28,7 +28,7 @@
 }
 
 .sobremim strong{
-  color: #ffffff;
+  color: var(--cor-texto-strong);
 }
 
 @media (max-width: 1200px) {

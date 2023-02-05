@@ -19,7 +19,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to bottom, #9f9b9b, #735dfd);
+  background-image: linear-gradient(to bottom, var(--cor-texto-h1-gradient), #735dfd);
 }
 
 .portfolios span {
@@ -27,7 +27,7 @@
 }
 
 .portfolios strong{
-  color: #ffffff;
+  color: var(--cor-texto-strong);
 
 }
 
@@ -47,18 +47,18 @@
 
 .portfolios a {
   text-decoration: none;
-  color: #ffff;
+  color: var(--cor-texto-link);
 }
 
 .portfolios a:hover {
   text-decoration: underline 3px #654df4;
-  color: #ffff;
+  color: var(--cor-texto-link);
 }
 
 .portfolios p {
   font-size: 20px;
   line-height: 1.4;
-  color: #dfdfdf;;
+  color: var(--cor-texto-p2);
 }
 
 @media (max-width: 800px) {

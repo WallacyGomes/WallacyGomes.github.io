@@ -16,7 +16,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to top, #9f9b9b, #735dfd);
+  background-image: linear-gradient(to top, var(--cor-texto-h1-gradient), #735dfd);
 }
 
 .certificado-s {
@@ -27,12 +27,12 @@
   gap: 20px;
   padding: 40px 40px;
   border-radius: 4px;
-  background-color: #0f0f0f;
+  background-color: var(--cor-fundo-cursos);
 }
 
 .certificado-s h2 {
   font-size: 48px;
-  color: #c2c2c2;
+  color: var(--cor-texto-h2);
 }
 
 .lista-certificados{
@@ -43,22 +43,22 @@
 
 .lista-certificados h3{
   font-weight: normal;
+  color: var(--cor-texto-h3);
 }
 
 .lista-certificados li {
   font-size: 22px;
   line-height: 1.4;
   padding: 20px 10px;
-
 }
 
 .lista-certificados li:nth-child(odd){
-  background-color: #080808;
+  background-color: var(--cor-fundo-cursos-li1);
   border-radius: 4px;
 }
 
 .lista-certificados li:nth-child(even){
-  background-color: #0a0a0a;
+  background-color: var(--cor-fundo-cursos-li2);
   border-radius: 4px;
 }
 
@@ -71,7 +71,7 @@
 
 .unindo a{
   text-decoration: none;
-  color: #735DFD;
+  color: var(--cor-link-cursos);
   font-size: 16px;
 }
 

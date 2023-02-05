@@ -4,7 +4,7 @@ footer {
   margin-top: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #060606;
+  background-color: var(--cor-fundo-footer);
   padding: 120px 30px 40px 30px;
   align-items: center;
 }
@@ -24,6 +24,7 @@ footer img {
   display: flex;
   gap: 12px;
   padding-bottom: 30px;
+  color: var(--cor-fundo-footer-p);
 }
 
 .celular {
@@ -38,7 +39,7 @@ footer img {
   left: 85%;
   width: 180px;
   height: 0px;
-  border: 2px solid #252525;
+  border: 2px solid var(--cor-detalhe-footer);
   transform: rotate(90deg);
 }
 
@@ -50,6 +51,7 @@ container-mensagem {
 .mensagem {
   font-size: 30px;
   text-align: right;
+  color: var(--cor-fundo-footer-p);
 }
 
 @media (max-width: 960px) {
