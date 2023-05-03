@@ -17,7 +17,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to top, var(--cor-texto-h1-gradient), #735dfd);
+  background-image: linear-gradient(
+    to top,
+    var(--cor-texto-h1-gradient),
+    #735dfd
+  );
 }
 
 .sobre-tecnologias h2 {
@@ -164,8 +168,5 @@ img {
   }
   .html::before {
     display: none;
-  }
-  .sobre-tecnologias h2 {
-    text-decoration: underline 3px #252525;
   }
 }
