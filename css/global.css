@@ -68,14 +68,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-.js-scroll {
-  opacity: 0;
-  transform: translate3d(-30px, 0, 0);
-  transition: 0.6s;
-}
-
-.js-scroll.ativado {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
