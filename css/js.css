@@ -1,19 +1,16 @@
-.js-scroll {
+.js .js-scroll {
     opacity: 0;
     transform: translate3d(-30px, 0, 0);
     transition: 0.6s;
 }
-  
-.js-scroll.ativado {
+.js .js-scroll.ativado {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
-
-.js-menuopacity.ativo{
+.js .js-menuopacity.ativo{
     opacity: 0.50;
     transition: .3s ease-in-out;
 }
-
-.js-menuopacity.ativo:hover{
+.js .js-menuopacity.ativo:hover{
     opacity: 0.95;
 }
