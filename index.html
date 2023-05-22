@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <script>document.querySelector('html').className='js';</script>
+    <script>document.querySelector('html').className = 'js-ativado';</script>
     <title>Wg - Desenvolvedor Front-end</title>
 </head>
 
@@ -41,44 +41,60 @@
     </section>
     <section class="sobre-tecnologias js-scroll" id="tecnologias" aria-label="Tecnologias">
         <h1>Tecnologias</h1>
-        <h2>Nível de experiência (atualmente)</h2>
+        <h2>Nível de experiência</h2>
         <ul class="lista-tec">
-            <li class="html">HTML5</li>
-            <abbr title="Nível atual: Básico"><img src="Imagens/estrelas.svg" class="estrelas-html" alt="estrelas"></abbr>
-            <li class="js">JavaScript</li>
-            <abbr title="Nível atual: Básico"><img src="Imagens/estrelas.svg" class="estrelas-js" alt="estrelas"></abbr>
-            <li class="css">CSS3</li>
-            <abbr title="Nível atual: Básico"><img src="Imagens/estrelas.svg" class="estrelas-css" alt="estrelas"></abbr>
-            <li class="react">React</li>
-            <abbr title="Nível atual: Básico"><img src="Imagens/estrelas.svg" class="estrelas-react" alt="estrelas"></abbr>
+            <li>
+                <div class="nivel-de-conhecimento conhecimento-html">
+                    <img src="Imagens/html5.png" alt="simbolo do html 5">
+                    <p>Conhecimento</p>
+                    <span>★★☆☆☆</span>
+                    <span class="detalhe-conhecimento">(básico)</span>
+                </div>
+            </li>
+            <li>
+                <div class="nivel-de-conhecimento conhecimento-css">
+                    <img src="Imagens/css3.png" alt="simbolo do css 3">
+                    <p>Conhecimento</p>
+                    <span>★★☆☆☆</span>
+                    <span class="detalhe-conhecimento">(básico)</span>
+                </div>
+            </li>
+            <li>
+                <div class="nivel-de-conhecimento conhecimento-js">
+                    <img src="Imagens/js.png" alt="simbolo do JavaScript">
+                    <p>Conhecimento</p>
+                    <span>★☆☆☆☆</span>
+                    <span class="detalhe-conhecimento">(básico)</span>
+                </div>
+            </li>
         </ul>
     </section>
     <section class="sobre-portfolio js-scroll" id="portfolio" aria-label="Portfólio">
         <h1>Portfólio</h1>
         <div class="portfolios">
-            <div class="portfolio1">
-                <a href="https://wallacygomes.github.io/Sorvertes-Palace/" rel="next" target="_blank"><img src="Imagens/fotodoprojetosorvetesp.png" alt="foto do projeto"></a>
+            <div class="portfolio">
+                <a href="https://wallacygomes.github.io/Sorvertes-Palace/" rel="next" target="_blank"><img src="Imagens/sorvete-palace.jpg" width="476" height="283" alt="foto do projeto"></a>
                 <a href="https://wallacygomes.github.io/Sorvertes-Palace/">
                     <h2><span>&lt;</span>Sorvetes Palace<span>&gt;</span></h2>
                 </a>
                 <p> A idéia foi criar um site com <strong>HTML5</strong> e <strong>CSS3</strong> no estilo <strong>landing page</strong> para uma sorveteria imaginária que gostaria de expandir o seu negócio e atrair mais clientes.</p>
             </div>
-            <div class="portfolio2">
-                <a href="#" rel="next" target="_blank"><img src="Imagens/projetodefault.png" alt="foto do projeto"></a>
+            <div class="portfolio">
+                <a href="https://wallacygomes.github.io/Para-Fazer/" rel="next" target="_blank"><img src="Imagens/para-fazer.jpg" width="476" height="283" alt="foto do projeto"></a>
                 <a href="#" rel="next" target="_blank">
-                    <h2><span>&lt;</span>Em construção :)<span>&gt;</span></h2>
+                    <h2><span>&lt;</span>Para-Fazer<span>&gt;</span></h2>
                 </a>
-                <p> Apenas comece.</p>
+                <p> Este projeto foi desenvolvido com <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>. <i>Para-Fazer</i> nada mais é do que um <strong>web to-do list</strong>, que ajuda as pessoas a organizar suas tarefas.</p>
             </div>
-            <div class="portfolio3">
-                <a href="#" rel="next" target="_blank"><img src="Imagens/projetodefault.png" alt="foto do projeto" rel="next" target="_blank"></a>
+            <div class="portfolio">
+                <a href="#" rel="next" target="_blank"><img src="Imagens/projeto-default.jpg" alt="foto do projeto" rel="next" target="_blank"></a>
                 <a href="#">
                     <h2><span>&lt;</span>Em construção :)<span>&gt;</span></h2>
                 </a>
                 <p>Sacrificios serão necessários.</p>
             </div>
-            <div class="portfolio4">
-                <a href="#" rel="next" target="_blank"><img src="Imagens/projetodefault.png" alt="foto do projeto"></a>
+            <div class="portfolio">
+                <a href="#" rel="next" target="_blank"><img src="Imagens/projeto-default.jpg" alt="foto do projeto"></a>
                 <a href="#" rel="next" target="_blank">
                     <h2><span>&lt;</span>Em construção :)<span>&gt;</span></h2>
                 </a>
@@ -103,21 +119,21 @@
         </div>
     </section>
     <footer id="contato">
-        <div class="contatos" id="contato">
-            <div class="email">
+        <div class="contatos">
+            <a href="mailto:wg.wallacygomes@gmail.com" target="_self" class="email">
                 <img src="Imagens/email.svg" alt="icone email">
                 <p>wg.wallacygomes@gmail.com</p>
-            </div>
-            <div class="celular">
+            </a>
+            <a href="tel:+5511962513752" target="_self" class="celular">
                 <img src="Imagens/celular.svg" alt="icone celular">
                 <p>+55 (11) 96251-3752</p>
-            </div>
-            <div class="linkedin">
+            </a>
+            <a href="https://www.linkedin.com/in/wallacy-gomes/" target="_blank" class="linkedin">
                 <img src="Imagens/linkedin.svg" alt="icone linkedin">
                 <p>Wallacy Gomes</p>
-            </div>
+            </a>
         </div>
-        <p class="mensagem">Estou aberto á propostas de<br> emprego e projetos, entre em<br> contato comigo, vamos<br> conversar ;)</p>
+        <p class="mensagem">Estou aberto á propostas de<br> emprego e projetos, entre em<br> contato comigo, vamos<br> conversar!</p>
     </footer>
 
 

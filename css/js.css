@@ -1,16 +1,16 @@
-.js .js-scroll {
-    opacity: 0;
-    transform: translate3d(-30px, 0, 0);
-    transition: 0.6s;
+.js-ativado .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.6s;
 }
-.js .js-scroll.ativado {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+.js-ativado .js-scroll.ativado {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
-.js .js-menuopacity.ativo{
-    opacity: 0.50;
-    transition: .3s ease-in-out;
+.js-ativado .js-menuopacity.ativo {
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
 }
-.js .js-menuopacity.ativo:hover{
-    opacity: 0.95;
+.js-ativado .js-menuopacity.ativo:hover {
+  opacity: 0.95;
 }
