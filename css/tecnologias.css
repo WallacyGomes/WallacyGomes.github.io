@@ -22,9 +22,13 @@
 }
 
 .sobre-tecnologias h2 {
-  padding-bottom: 60px;
   font-size: 28px;
-  font-weight: normal;
+  font-weight: bold;
+  background-color: #563cfc;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 5px 10px;
 }
 
 .lista-tec {
@@ -33,30 +37,21 @@
   gap: 20px;
 }
 
-
 .nivel-de-conhecimento {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 1.2rem;
   padding: 10px;
-  border-radius: 16px;
+  border-radius: 4px;
   font-weight: bold;
   gap: 6px;
 }
 
-.conhecimento-html {
-  background-color: #ff4c1e;
-  grid-area: 2/1;
-}
-
-.conhecimento-css {
-  background-color: #004ce8;
-}
-
+.conhecimento-html,
+.conhecimento-css,
 .conhecimento-js {
-  background-color: #ffd600;
-  color: #000;
+  background-color: #131313;
 }
 
 .detalhe-conhecimento {
