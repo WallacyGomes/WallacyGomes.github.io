@@ -26,11 +26,22 @@
 .sobre-tecnologias h2 {
   font-size: 28px;
   font-weight: bold;
-  background-color: #563cfc;
   border-radius: 4px;
   text-align: center;
   margin-bottom: 60px;
   padding: 5px 10px;
+  position: relative;
+}
+
+.sobre-tecnologias h2::after{
+  content: '';
+  display: block;
+  width: 300px;
+  height: 4px;
+  background-color: #735dfd;
+  position: absolute;
+  bottom: -10px;
+  left: 230px;
 }
 
 .lista-tec {
@@ -43,22 +54,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 10px;
   border-radius: 20px;
   font-weight: bold;
   gap: 6px;
 }
 
+.nivel-de-conhecimento span:first-of-type{
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
 .lista-tec li:nth-child(odd) {
-  background-color: #131313;
+  background-color: var(--cor-fundo-cursos-li1);
   border-radius: 4px;
 }
 
 .detalhe-conhecimento {
   font-size: 0.9rem;
-  font-weight: normal;
+  font-weight: bold;
   padding-top: 6px;
+  color: #ffffff18;
 }
 
 @media (max-width: 800px) {
@@ -76,34 +93,9 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .css {
-    grid-area: 5/1;
-    position: relative;
-  }
-  .estrelas-css {
-    grid-area: 6/1;
-    padding: 14px 0px 40px;
-  }
-  .react {
-    grid-area: 7/1;
-    position: relative;
-  }
-  .estrelas-react {
-    grid-area: 8/1;
-    padding-bottom: 20px;
-  }
-  .html::before {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 2px;
-    position: absolute;
-    top: -60px;
-    left: 150px;
-    transform: rotate(0deg);
-  }
-  .js::before {
-    display: none;
+  .sobre-tecnologias h2::after{
+    width: 260px;
+    left: 118px;
   }
 }
 
@@ -120,6 +112,9 @@
     padding: 0px 0px 40px 0px;
   }
   .sobre-tecnologias h2 {
-    font-size: 18px;
+    font-size: 24px;
+  }
+  .sobre-tecnologias h2::after{
+    display: none;
   }
 }

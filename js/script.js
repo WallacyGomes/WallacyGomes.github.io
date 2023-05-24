@@ -1,6 +1,6 @@
 // Função do efeito de scroll dos links internos
 function activeScrollSuave() {
-  const menu = document.querySelectorAll('.header-menu li [href^="#"]');
+  const menu = document.querySelectorAll('a[href^="#"]');
   if (menu.length) {
     function scrollSuave(e) {
       e.preventDefault();
