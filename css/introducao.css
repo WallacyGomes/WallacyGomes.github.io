@@ -123,38 +123,28 @@
   .introducao {
     grid-template-columns: 1fr;
     place-items: center;
-    padding: 100px 0px 150px 0px;
+    padding: 100px 0px 100px 0px;
   }
   .fotoperfil {
-    display: none;
+    grid-area: 2/1;
+    margin-left: 0px;
   }
-  .home,
-  h1 {
-    font-size: 3.5rem;
-  }
-  .nome {
-    line-height: 1.5;
-  }
-  .home > h1::after {
-    width: 17px;
-    height: 50px;
-    left: -1.7rem;
-    bottom: 9.6rem;
-  }
-
-  .home > h1::before {
-  content: "!";
-  font-size: 60px;
-  left: 16.5rem;
-  bottom: -0.8rem;
-  }
-}
-
-@media (max-width: 440px){
   .home,
   h1 {
     font-size: 2rem;
   }
+  .nome {
+    line-height: 1.5;
+  }
+  .home > h1::before {
+  content: "!";
+  font-size: 46px;
+  left: 150px;
+  bottom: -30px;
+  }
+}
+
+@media (max-width: 440px){
   .home > h1::before {
   font-size: 40px;
   left: 9.5rem;
