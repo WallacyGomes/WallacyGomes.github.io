@@ -20,6 +20,10 @@
   --cor-texto-span: #e7e3e3;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   font-family: "Fira-sans", arial, sans-serif;
