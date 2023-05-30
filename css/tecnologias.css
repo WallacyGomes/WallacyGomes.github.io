@@ -39,6 +39,7 @@
   width: 300px;
   height: 4px;
   background-color: #735dfd;
+  border-radius: 4px;
   position: absolute;
   bottom: -10px;
   left: 230px;
@@ -61,14 +62,46 @@
   gap: 6px;
 }
 
-.nivel-de-conhecimento span:first-of-type{
-  font-weight: normal;
-  font-size: 1.6rem;
+.barra-progresso{
+  display: flex;
+  width: 150px;
+  height: 10px;
+  border-radius: 4px;
+  background-color: #735dfd;
+  margin: 10px 0px;
+  position: relative;
+  border: 2px solid #1b134ee1;
 }
 
-.lista-tec li:nth-child(odd) {
-  background-color: var(--cor-fundo-cursos-li1);
+.barra-progresso::after,
+.barra-progresso.js::after{
+  display: block;
+  content: '50%';
+  position: absolute;
+  top: -4px;
+  right: -38px;
+  color: #725dfd9a;
+  font-size: 1rem;
+}
+
+.progresso{
+  display: block;
+  width: 75px;
+  height: 10px;
   border-radius: 4px;
+  background-color: #fff;
+}
+
+.barra-progresso.js::after{
+  content: '20%';
+}
+
+.progresso.js{
+  display: block;
+  width: 30px;
+  height: 10px;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
 .detalhe-conhecimento {
