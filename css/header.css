@@ -119,7 +119,7 @@ li > a {
     position: relative;
     cursor: pointer;
   }
-  
+
   .menu-btn-top,
   .menu-btn-top::after,
   .menu-btn-bottom{
@@ -127,15 +127,28 @@ li > a {
     height: 3px;
     background-color: #fff;
     border-radius: 4px;
+    opacity: 1;
+    transition: all .24s ease-out;
   }
-  
   .menu-btn-top::after{
     content: '';
     display: block;
-    position: absolute;
-    top: 22px;
-    left: 9px;
+    transform: translateY(12px);
   }
+
+  .aberto .menu-btn-top{
+    transform: rotate(45deg) translate(8px, 9px);
+  }
+  
+  .aberto .menu-btn-top::after{
+    transform: rotate(-45deg) translateX(-40px) translateY(-2px);
+    background: transparent;
+  }
+
+  .aberto .menu-btn-bottom{
+    transform: rotate(-45deg) translate(7px, -9px);
+  }
+
   .menu-content-container{
     display: block;
     width: 150px;
