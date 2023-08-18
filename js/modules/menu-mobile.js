@@ -32,6 +32,13 @@ export default function activeMenuMobile() {
       const contatoText = document.createTextNode("Contato");
       contatoMenuContent.appendChild(contatoText);
       ulMenuContent.appendChild(contatoMenuContent);
+      
+      const curriculoMenuContent = document.createElement("a");
+      curriculoMenuContent.setAttribute("href", "wgcurriculo.pdf");
+      curriculoMenuContent.setAttribute("download", "Curriculo - Wallacy Gomes");
+      const curriculoText = document.createTextNode("Baixar Currículo");
+      curriculoMenuContent.appendChild(curriculoText);
+      ulMenuContent.appendChild(curriculoMenuContent);
 
       btnclicado = false;
     } else {

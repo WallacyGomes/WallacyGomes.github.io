@@ -36,11 +36,11 @@ li > a {
   position: relative;
 }
 
-.header-menu a:hover{
+.header-menu [href^="#"]:hover{
   color: var(--cor-detalhe);
 }
 
-.header-menu a:hover::before {
+.header-menu [href^="#"]:hover::before {
   content: "";
   display: block;
   width: 100%;
@@ -50,6 +50,22 @@ li > a {
   top: 26px;
   left: 0px;
   border-radius: 4px;
+}
+
+.curriculo {
+  padding: 10px;
+  margin-left: 20px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  transition: .3s ease-in-out;
+}
+
+.curriculo:hover{
+  background-color: var(--cor-detalhe);
+}
+
+.curriculo-ico{
+  padding-right: 10px;
 }
 
 .menu-btn{
